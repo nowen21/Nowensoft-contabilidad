@@ -8,8 +8,9 @@ use Illuminate\View\Component;
 
 class App extends Component
 {
+
     private $parametr = [
-        'clasnavb' => '', // Clase para la barra de navegación (valor inicial: cadena vacía)
+        'clasnavb' => 'navbar-expand navbar-white navbar-light', // Clase para la barra de navegación (valor inicial: cadena vacía)
         'clasbody' => 'sidebar-mini layout-fixed', // Clase para el cuerpo (valor inicial: espacio en blanco)
         'jstempla' => [], // Plantillas JS (valor inicial: arreglo vacío)
         'csstempl' => [], // Plantillas CSS (valor inicial: arreglo vacío)
@@ -23,6 +24,8 @@ class App extends Component
         'template' => 'layouts.adminlte.template', // Ruta de la plantilla general
         'sectionx' => false // Indicador de sección (valor inicial: falso)
     ];
+
+    
     /**
      * Create a new component instance.
      */
